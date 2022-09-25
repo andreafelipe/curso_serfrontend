@@ -5,22 +5,84 @@ body{
 }
 
 a{
-    transition: color .2s linear;
+    transition: color .2s linear, border .2s linear;
     text-decoration: none;
+    color: #49bf9d;
     border-bottom: 2px dotted;
+}
+
+a:hover{
+    border-bottom-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #787878;
+    font-weight: normal; /*sem negrito*/
+    margin: 0 0 1em; /*espaçar conforme font-size; 1em=font-size definido*/
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+h6 {
+    font-size: 10px;
+}
+
+p {
+   margin: 0 0 1em; 
+}
+
+sub, sup {
+    font-size: 12px;
+}
+
+blockquote {
+    border-left: 5px solid #efefef;
+    margin: 2em 0;
+    padding: .5em 0 .5em 1.5em;
+}
+
+code {
+    background-color: #f7f7f7;
+    border-radius: .35em;
+    border: 2px solid #efefef;
+    font-size: .9em;
+    padding: 0.25em 2em;
+    font-family: 'Courier New', monospace;/*todo nome de font que tem espaço deve ser escrita entre aspas*/
+}
+
+pre code {
+    display: block;
 }
 
 .main-header{
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0;/*auxilia deixar posição fixa*/
+    left: 0;/*auxilia deixar posição fixa*/
     height: 100%;
     width: 35%;
     padding: 124px 54px 72px 54px;
     box-sizing: border-box;
     background-image: url(../ProjetoStrataImages/overlay.png), url(../ProjetoStrataImages/bg.jpg);
     background-position: left top;
-    background-size: auto, cover;
+    background-size: auto, cover;/*primeiro valor url1, segundo url2*/
     text-align: right;
 
 }
@@ -38,7 +100,8 @@ a{
 }
 
 .main-header-link{
-    color: inherit; /* herda cor do elemento "pai" */
+    color: inherit; /* herda cor do elemento "pai"; cor do elemento pai foi definida no body*/
+    
 }
 
 .main-header-link:hover{
@@ -48,7 +111,11 @@ a{
 .main-content{
     width: 65%;
     margin-left: 35%;
-    padding: 124px 54px 72px 54px;
+    padding: 80px 54px 60px 54px;
     box-sizing: border-box;/*para padding não somar o tamanho do elemento; fixar conteúdo*/
+}
+
+.main-footer {
+    
 }
 
