@@ -15,6 +15,10 @@ a:hover{
     border-bottom-color: transparent;
 }
 
+.image-link{
+    border: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: #787878;
     font-weight: normal; /*sem negrito*/
@@ -49,6 +53,20 @@ p {
    margin: 0 0 1em; 
 }
 
+img{
+    max-width: 100%;/*tamanho maximo da imagem*/
+
+}
+
+.recent-works-card img{
+    border-radius: 10px;
+}
+
+.main-header img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 sub, sup {
     font-size: 12px;
 }
@@ -72,14 +90,37 @@ pre code {
     display: block;
 }
 
+/*grid*/
 .row{
-overflow: auto;
+    overflow: auto;
 }
 
 .col2{
-    width: 50%;
+    width: 49%;
     float: left;
 }
+
+.col2:first-child{
+    margin-right: 1%;
+}
+
+.col2:last-child{
+margin-left: 1%;
+}
+
+.col2-3{
+width: 65%;
+float: left;
+}
+
+.col1-3{
+    width: 32%;
+    float: left;
+    margin-left: 3%;
+
+}
+
+/**/
 
 ul, ol{
     margin: 0;
@@ -124,6 +165,7 @@ li{
  border-radius: 5px;
  font-size: .8em;
  display: inline-block;
+ width: auto;/*voltar largura padrão*/
 }
 
 .button-default-stroke{
@@ -141,6 +183,37 @@ font-size: 0.5em;
     display: block;
     text-align: center;
     }
+
+
+input, label, textarea{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input, textarea, select{
+    background: #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+    border: 2px solid transparent;
+
+}
+
+input[type="radio"], input[type="checkbox"]{
+    width: auto;
+}
+
+input:focus, textarea:focus{
+    border: 2px solid #49bf9d;
+    outline: none;/*para desativar borda padrão*/
+}
+
+textarea{
+    height: 10em;
+    resize: none;
+}
 
 .table{
     width: 100%;
@@ -176,8 +249,8 @@ background: #eee;
 
 .table-alternate tbody td, .table-alternate tbody tr:last-child td, .table-alternate tbody tr:first-child td{
     border:1px solid #ddd;
-
 }
+
 
 .main-header{
     position: fixed;
